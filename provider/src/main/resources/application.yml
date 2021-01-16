@@ -1,0 +1,14 @@
+server:
+  port: 1998
+
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    protocol: nacos
+    address: 192.168.73.133:8848
+
+spring:
+  main:
+    # 解决Bean重复定义问题
+    allow-bean-definition-overriding: true
